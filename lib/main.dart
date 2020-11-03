@@ -34,31 +34,53 @@ class MyProfile extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.only(left: 10.0, right: 10.0),
-                height: 30.0,
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail_outline_outlined,
-                      size: 20.0,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'obi_wan@iessaladillo.es',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontSize: 15.0,
+              //Container(
+              //  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+               // padding: EdgeInsets.only(left: 10.0, right: 10.0),
+               // height: 30.0,
+               /// color: Colors.white,
+              //  child: Row(
+               //   children: [
+               //     Icon(
+               //       Icons.mail_outline_outlined,
+                //      size: 20.0,
+                //    ),
+                 //   SizedBox(
+                  //    width: 10.0,
+                  ////  ),
+                  //  Text(
+                 //     'obi_wan@iessaladillo.es',
+                 //     style: TextStyle(
+                 //       fontFamily: 'Roboto',
+                 ///       fontSize: 15.0,
+                ////      ),
+                //    ),
+               //   ],
+              //  ),
+             // ),
+              Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child:ListTile(
+                  leading: Icon(
+                    Icons.mail_outline_outlined,
+                    color: Colors.black
+                  ),
+                  title: Text("Alvaro@gmail.com")
+                )
+              ),
+              Card(
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+
+                  child:ListTile(
+                      leading: Icon(
+                          Icons.phone,
+                          color: Colors.black
                       ),
-                    ),
-                  ],
-                ),
+                      title: Text("900 000 000")
+                  )
               ),
             ],
+
           ),
         ),
       ),
